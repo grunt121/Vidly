@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Vidly.Models;
+using Vidly.ViewModels;
 using System.Web.Mvc;
 
 namespace Vidly.Controllers
@@ -13,38 +14,42 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Shrek!" };
-            var viewResult = new ViewResult();
+            var customers = new List<Customer>          //Creates a new list and adds items to it
+            {
+                new Customer {Name = "Customer 1" },
+                new Customer {Name = "Customer 2" }
+            };
 
-            ViewResult.ViewData.Model
-            return View(movie);
+            var viewModel = new RandomMovieViewModel //As you are using a view model you need to add this information in 
+            {
+                Movie = movie,
+                Customers = customers
+            };
 
-        //These are Action Results Outcomes of Actions
-            //return View(movie);  //Returns a view   
-            //return Content("Hello World"); //Returns text
-            // return HttpNotFound(); //returns 404 error
-            //return new EmptyResult(); //returns empty result
-            //return RedirectToAction("Index", "Home", new { page = 1, sortBy = "name" }); //passing through parameters
+
+            return View(viewModel);
+            
         }
 
-        public ActionResult Edit(int id)
+        public ActionResult MovieList()
         {
-            return Content("id=" + id);
+            var movieList = new List<Movie>
+            {
+                new Movie {Name= "Shrek" },
+                new Movie {Name= "Its a wonderful Life" }
+            };
+
+
+            var viewModel = new MovieViewModel //As you are using a view model you need to add this information in 
+            {
+                Movies = movieList
+     
+            };
+  
+            return View(viewModel);
+
         }
 
-        public ActionResult Index(int? pageIndex, string sortBy)
-        {
-            if (!pageIndex.HasValue) pageIndex = 1;
 
-            if (string.IsNullOrWhiteSpace(sortBy)) sortBy = "Name";
-
-            return Content(String.Format("pageIndex{0}&sortBy={1}", pageIndex, sortBy));
-
-        }
-
-        [Route("movies/released/{year}/{month:regex(\\d{2}:range(1,12)}")]
-        public ActionResult ByReleaseDate(int year, int month)
-        {
-            return Content(year + "/" + month);
-        }
     }
 }
