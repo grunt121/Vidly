@@ -26,6 +26,8 @@ namespace Vidly.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+
         }
     }
 }

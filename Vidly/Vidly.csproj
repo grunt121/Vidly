@@ -196,6 +196,22 @@
     <Compile Include="Migrations\201611231053014_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201611231053014_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611231159388_CreateMembershipTypeName.cs" />
+    <Compile Include="Migrations\201611231159388_CreateMembershipTypeName.Designer.cs">
+      <DependentUpon>201611231159388_CreateMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231200499_UpdateMemebershipTypeName.cs" />
+    <Compile Include="Migrations\201611231200499_UpdateMemebershipTypeName.Designer.cs">
+      <DependentUpon>201611231200499_UpdateMemebershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231213407_RenameMemebershipTypeNameToName.cs" />
+    <Compile Include="Migrations\201611231213407_RenameMemebershipTypeNameToName.Designer.cs">
+      <DependentUpon>201611231213407_RenameMemebershipTypeNameToName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231216135_UpdateMemebershipTypeName1.cs" />
+    <Compile Include="Migrations\201611231216135_UpdateMemebershipTypeName1.Designer.cs">
+      <DependentUpon>201611231216135_UpdateMemebershipTypeName1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -296,6 +312,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611231053014_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201611231053014_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231159388_CreateMembershipTypeName.resx">
+      <DependentUpon>201611231159388_CreateMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231200499_UpdateMemebershipTypeName.resx">
+      <DependentUpon>201611231200499_UpdateMemebershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231213407_RenameMemebershipTypeNameToName.resx">
+      <DependentUpon>201611231213407_RenameMemebershipTypeNameToName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231216135_UpdateMemebershipTypeName1.resx">
+      <DependentUpon>201611231216135_UpdateMemebershipTypeName1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
