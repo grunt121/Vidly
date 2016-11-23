@@ -31,24 +31,9 @@ namespace Vidly.Controllers
             
         }
 
-        public ActionResult MovieList()
-        {
-            var movieList = new List<Movie>
-            {
-                new Movie {Name= "Shrek" },
-                new Movie {Name= "Its a wonderful Life" }
-            };
 
 
-            var viewModel = new MovieViewModel //As you are using a view model you need to add this information in 
-            {
-                Movies = movieList
-     
-            };
-  
-            return View(viewModel);
-
-        }
+        // return HttpNotFound(); //returns 404 error
 
 
     }

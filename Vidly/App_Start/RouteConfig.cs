@@ -14,13 +14,18 @@ namespace Vidly
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapMvcAttributeRoutes();
 
-/* routes.MapRoute(
-            "MoviesByReleasedDate",
-                "movies/released/{year}/{month}",
-                new { controller = "Movies", action = "ByReleaseDate"},
-                new { year = @"2015|2016", month = @"\d{2}" }); //this is an example of using regular expressions to restrict access 2015 or 2016
-                */
+            /* routes.MapRoute(
+                        "MoviesByReleasedDate",
+                            "movies/released/{year}/{month}",
+                            new { controller = "Movies", action = "ByReleaseDate"},
+                            new { year = @"2015|2016", month = @"\d{2}" }); //this is an example of using regular expressions to restrict access 2015 or 2016
+                            */
 
+            routes.MapRoute(
+                    "CustomerDetails",
+                    "customers/details/{id}",
+                    new { controller = "Customers", action = "ByDetails" });
+                            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
