@@ -26,13 +26,13 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var customers = _context.Customers; //this will load all customer in the database
+            var customers = _context.Customers.ToList(); //this will load all customer in the database adding the to list loads everything right now
             return View(customers);
         }
 
         public ActionResult Details(int id)
         {
-            var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
             if (customer == null)
                 return HttpNotFound();
 
@@ -41,14 +41,6 @@ namespace Vidly.Controllers
 
         }
 
-        private IEnumerable<Customer> GetCustomers()
-        {
-            return new List<Customer>
-            {
-                new Customer {Id = 1, Name = "John Smith" },
-                new Models.Customer {Id=2, Name="Mary Williams" }
-            };
-        }
 
 
       
