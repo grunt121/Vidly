@@ -212,6 +212,58 @@
     <Compile Include="Migrations\201611231216135_UpdateMemebershipTypeName1.Designer.cs">
       <DependentUpon>201611231216135_UpdateMemebershipTypeName1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611231258292_AddBirthDateColumn.cs" />
+    <Compile Include="Migrations\201611231258292_AddBirthDateColumn.Designer.cs">
+      <DependentUpon>201611231258292_AddBirthDateColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231302210_UpdateBirthDateNullable.cs" />
+    <Compile Include="Migrations\201611231302210_UpdateBirthDateNullable.Designer.cs">
+      <DependentUpon>201611231302210_UpdateBirthDateNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231403439_AddMovies.cs" />
+    <Compile Include="Migrations\201611231403439_AddMovies.Designer.cs">
+      <DependentUpon>201611231403439_AddMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231405203_UpdateMoviesGenreId.cs" />
+    <Compile Include="Migrations\201611231405203_UpdateMoviesGenreId.Designer.cs">
+      <DependentUpon>201611231405203_UpdateMoviesGenreId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231407024_UpdateMoviesGenreId1.cs" />
+    <Compile Include="Migrations\201611231407024_UpdateMoviesGenreId1.Designer.cs">
+      <DependentUpon>201611231407024_UpdateMoviesGenreId1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231408151_PopulateMovies.cs" />
+    <Compile Include="Migrations\201611231408151_PopulateMovies.Designer.cs">
+      <DependentUpon>201611231408151_PopulateMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231511506_CreateMovieDetails.cs" />
+    <Compile Include="Migrations\201611231511506_CreateMovieDetails.Designer.cs">
+      <DependentUpon>201611231511506_CreateMovieDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231542250_ResetTables.cs" />
+    <Compile Include="Migrations\201611231542250_ResetTables.Designer.cs">
+      <DependentUpon>201611231542250_ResetTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231559557_AddMovieDetails.cs" />
+    <Compile Include="Migrations\201611231559557_AddMovieDetails.Designer.cs">
+      <DependentUpon>201611231559557_AddMovieDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231603057_RemoveColumnMovieDetails.cs" />
+    <Compile Include="Migrations\201611231603057_RemoveColumnMovieDetails.Designer.cs">
+      <DependentUpon>201611231603057_RemoveColumnMovieDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231603512_RemoveColumnMovieDetails1.cs" />
+    <Compile Include="Migrations\201611231603512_RemoveColumnMovieDetails1.Designer.cs">
+      <DependentUpon>201611231603512_RemoveColumnMovieDetails1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231604569_RemoveColumnMovieDetails2.cs" />
+    <Compile Include="Migrations\201611231604569_RemoveColumnMovieDetails2.Designer.cs">
+      <DependentUpon>201611231604569_RemoveColumnMovieDetails2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611231610215_RemovingMovieDetailsTable.cs" />
+    <Compile Include="Migrations\201611231610215_RemovingMovieDetailsTable.Designer.cs">
+      <DependentUpon>201611231610215_RemovingMovieDetailsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -324,6 +376,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611231216135_UpdateMemebershipTypeName1.resx">
       <DependentUpon>201611231216135_UpdateMemebershipTypeName1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231258292_AddBirthDateColumn.resx">
+      <DependentUpon>201611231258292_AddBirthDateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231302210_UpdateBirthDateNullable.resx">
+      <DependentUpon>201611231302210_UpdateBirthDateNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231403439_AddMovies.resx">
+      <DependentUpon>201611231403439_AddMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231405203_UpdateMoviesGenreId.resx">
+      <DependentUpon>201611231405203_UpdateMoviesGenreId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231407024_UpdateMoviesGenreId1.resx">
+      <DependentUpon>201611231407024_UpdateMoviesGenreId1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231408151_PopulateMovies.resx">
+      <DependentUpon>201611231408151_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231511506_CreateMovieDetails.resx">
+      <DependentUpon>201611231511506_CreateMovieDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231542250_ResetTables.resx">
+      <DependentUpon>201611231542250_ResetTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231559557_AddMovieDetails.resx">
+      <DependentUpon>201611231559557_AddMovieDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231603057_RemoveColumnMovieDetails.resx">
+      <DependentUpon>201611231603057_RemoveColumnMovieDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231603512_RemoveColumnMovieDetails1.resx">
+      <DependentUpon>201611231603512_RemoveColumnMovieDetails1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231604569_RemoveColumnMovieDetails2.resx">
+      <DependentUpon>201611231604569_RemoveColumnMovieDetails2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231610215_RemovingMovieDetailsTable.resx">
+      <DependentUpon>201611231610215_RemovingMovieDetailsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
