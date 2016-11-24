@@ -264,6 +264,34 @@
     <Compile Include="Migrations\201611231610215_RemovingMovieDetailsTable.Designer.cs">
       <DependentUpon>201611231610215_RemovingMovieDetailsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611241141072_CreateMovieInfoClass.cs" />
+    <Compile Include="Migrations\201611241141072_CreateMovieInfoClass.Designer.cs">
+      <DependentUpon>201611241141072_CreateMovieInfoClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241152173_ClearPendingUpdates.cs" />
+    <Compile Include="Migrations\201611241152173_ClearPendingUpdates.Designer.cs">
+      <DependentUpon>201611241152173_ClearPendingUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241153280_DeleteMovieInfoIfPresent.cs" />
+    <Compile Include="Migrations\201611241153280_DeleteMovieInfoIfPresent.Designer.cs">
+      <DependentUpon>201611241153280_DeleteMovieInfoIfPresent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241156379_CreateMovieInfo.cs" />
+    <Compile Include="Migrations\201611241156379_CreateMovieInfo.Designer.cs">
+      <DependentUpon>201611241156379_CreateMovieInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241157464_CreateMovieInfo1.cs" />
+    <Compile Include="Migrations\201611241157464_CreateMovieInfo1.Designer.cs">
+      <DependentUpon>201611241157464_CreateMovieInfo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241416390_CreateMovieInfoTable.cs" />
+    <Compile Include="Migrations\201611241416390_CreateMovieInfoTable.Designer.cs">
+      <DependentUpon>201611241416390_CreateMovieInfoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241419435_CreateMovieInfoTable2.cs" />
+    <Compile Include="Migrations\201611241419435_CreateMovieInfoTable2.Designer.cs">
+      <DependentUpon>201611241419435_CreateMovieInfoTable2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -271,6 +299,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
@@ -415,6 +444,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611231610215_RemovingMovieDetailsTable.resx">
       <DependentUpon>201611231610215_RemovingMovieDetailsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241141072_CreateMovieInfoClass.resx">
+      <DependentUpon>201611241141072_CreateMovieInfoClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241152173_ClearPendingUpdates.resx">
+      <DependentUpon>201611241152173_ClearPendingUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241153280_DeleteMovieInfoIfPresent.resx">
+      <DependentUpon>201611241153280_DeleteMovieInfoIfPresent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241156379_CreateMovieInfo.resx">
+      <DependentUpon>201611241156379_CreateMovieInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241157464_CreateMovieInfo1.resx">
+      <DependentUpon>201611241157464_CreateMovieInfo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241416390_CreateMovieInfoTable.resx">
+      <DependentUpon>201611241416390_CreateMovieInfoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241419435_CreateMovieInfoTable2.resx">
+      <DependentUpon>201611241419435_CreateMovieInfoTable2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
