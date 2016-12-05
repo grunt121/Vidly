@@ -18,8 +18,9 @@
     {
     <tr>
         @*To do the redirect you need to use the action*@
-    <td>@movie.Name </td>
-        <td>@movie.Genre</td>
+    <td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null) </td>
+        
+        <td>@movie.Genre.GenreName</td>
     </tr>
     }
         

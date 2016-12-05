@@ -171,7 +171,6 @@
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MoviesController - Copy.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -292,14 +291,50 @@
     <Compile Include="Migrations\201611241419435_CreateMovieInfoTable2.Designer.cs">
       <DependentUpon>201611241419435_CreateMovieInfoTable2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611241427377_Jamie.cs" />
+    <Compile Include="Migrations\201611241427377_Jamie.Designer.cs">
+      <DependentUpon>201611241427377_Jamie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241428330_Jamie1.cs" />
+    <Compile Include="Migrations\201611241428330_Jamie1.Designer.cs">
+      <DependentUpon>201611241428330_Jamie1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611241430003_Jamie2.cs" />
+    <Compile Include="Migrations\201611241430003_Jamie2.Designer.cs">
+      <DependentUpon>201611241430003_Jamie2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051356426_DeleteMovieInformation.cs" />
+    <Compile Include="Migrations\201612051356426_DeleteMovieInformation.Designer.cs">
+      <DependentUpon>201612051356426_DeleteMovieInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051359353_AddExtratMovieValues.cs" />
+    <Compile Include="Migrations\201612051359353_AddExtratMovieValues.Designer.cs">
+      <DependentUpon>201612051359353_AddExtratMovieValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051407118_AddGenereTable.cs" />
+    <Compile Include="Migrations\201612051407118_AddGenereTable.Designer.cs">
+      <DependentUpon>201612051407118_AddGenereTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051417197_UpdateGenereTable.cs" />
+    <Compile Include="Migrations\201612051417197_UpdateGenereTable.Designer.cs">
+      <DependentUpon>201612051417197_UpdateGenereTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051417439_PopulateGenereTable.cs" />
+    <Compile Include="Migrations\201612051417439_PopulateGenereTable.Designer.cs">
+      <DependentUpon>201612051417439_PopulateGenereTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051419490_PopulateGenereFKInMovies.cs" />
+    <Compile Include="Migrations\201612051419490_PopulateGenereFKInMovies.Designer.cs">
+      <DependentUpon>201612051419490_PopulateGenereFKInMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
-    <Compile Include="Models\MovieInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
@@ -327,7 +362,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -366,6 +403,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -465,6 +503,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611241419435_CreateMovieInfoTable2.resx">
       <DependentUpon>201611241419435_CreateMovieInfoTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241427377_Jamie.resx">
+      <DependentUpon>201611241427377_Jamie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241428330_Jamie1.resx">
+      <DependentUpon>201611241428330_Jamie1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611241430003_Jamie2.resx">
+      <DependentUpon>201611241430003_Jamie2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051356426_DeleteMovieInformation.resx">
+      <DependentUpon>201612051356426_DeleteMovieInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051359353_AddExtratMovieValues.resx">
+      <DependentUpon>201612051359353_AddExtratMovieValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051407118_AddGenereTable.resx">
+      <DependentUpon>201612051407118_AddGenereTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051417197_UpdateGenereTable.resx">
+      <DependentUpon>201612051417197_UpdateGenereTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051417439_PopulateGenereTable.resx">
+      <DependentUpon>201612051417439_PopulateGenereTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051419490_PopulateGenereFKInMovies.resx">
+      <DependentUpon>201612051419490_PopulateGenereFKInMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
